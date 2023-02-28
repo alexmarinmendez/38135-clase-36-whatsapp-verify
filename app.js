@@ -32,7 +32,6 @@ app.post('/check/:phone/:code', async(req, res) => {
         } else {
             res.status(401).json( { status: "Not autorizado" })
         }
-        res.json({ status })
     }catch (err) {}
 })
 
